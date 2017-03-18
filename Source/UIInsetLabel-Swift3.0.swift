@@ -52,4 +52,12 @@ class UIInsetLabel: UILabel
 			return (CGSize(width: (superViewContentSize.width + insetWidth), height: (superViewContentSize.height + insetHeight)))
 		}
 	}
+	
+	var RectforPopover: CGRect
+	{
+		get
+		{
+			return(CGRect(x: 0.0, y: 0.0, width: super.frame.width, height: super.frame.height))
+		}
+	}
 }
